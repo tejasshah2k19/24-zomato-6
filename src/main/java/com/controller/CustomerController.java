@@ -21,13 +21,14 @@ public class CustomerController {
 
 	@PutMapping
 	public CustomerEntity updateCustomerProfile(@RequestBody CustomerEntity customerEntity) {
+		//
 		customerRepository.save(customerEntity);
 		return customerEntity;
 	}
 
 	@GetMapping
 	public List<CustomerEntity> getAllCustomers() {
-
+//
 		return customerRepository.findAll();
 
 	}

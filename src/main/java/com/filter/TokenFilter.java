@@ -16,12 +16,12 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
-@Component
+
 public class TokenFilter implements Filter {
 
 	@Autowired
 	CustomerRepository customerRepository;
-
+	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
